@@ -1,0 +1,100 @@
+.tableresume{                             /*OK*/
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    text-align: center;
+    /*¿Cómo hacer para que las columnas tengan el mismo tamañao proporcionado?*/
+    }
+  
+  .cellresume{                             /*OK*/
+    background-color: $greyColor;
+    padding: 40px 40px 40px 40px;
+    border-radius: 10px;
+    width: 100%; /*antes 40%*/
+  }
+  
+  .trresume{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  
+  .thresume {
+    padding-top: 10px;
+  }
+  
+  select{                             /*OK*/
+    /* background-color: #C3D69B; */
+    background-image: linear-gradient($greenColorSecondary, $greenColor);
+    padding: 8px;
+    border-radius: 05px;
+    border: none;
+    width: 80%;
+  }
+
+
+  .table{                             /*OK*/
+    border: 02px solid $greyColor;
+    table-layout: auto;
+    text-align: center;
+  }
+  
+  .table tr :nth-child(4),tr :nth-child(5) {
+    display:none;
+  }
+  
+  .tableanotation{                             /*OK*/
+    border: 02px solid $greyColor;
+    table-layout: auto;
+    text-align: left;
+  }
+  
+  .table.row {                             /*OK*/
+    border: 02px solid $greyColor;
+  }
+  
+  .th{                             /*OK*/
+    padding: 10px;
+    width: 15%;
+    border-bottom: 1px solid $greyColor;
+    transition: color 1.5s ease-out;
+  }
+  
+  tr:hover{                             /*OK*/
+    background-color: $greyColor;
+  }
+
+@media screen and (min-width:600px) and (orientation: portrait) {
+    
+    .table tr :nth-child(4),tr :nth-child(5) {
+      display: table-cell;
+    }
+}
+
+@media screen and (min-width:600px) and (orientation: landscape) {
+  
+    .table tr :nth-child(4),tr :nth-child(5) {
+        display: table-cell;
+      }
+        
+  
+  .tableresume{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .trresume{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+  
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

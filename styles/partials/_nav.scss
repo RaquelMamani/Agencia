@@ -1,0 +1,85 @@
+
+  .navtitle{                           /*OK*/
+    color: $whiteColor;
+    padding-left: 10px;
+  }
+
+  .navbar{
+    padding-top: 0%;  /*antes 10%*/
+    padding-left: 7%;
+    font-family: 'Cabin', sans-serif;
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 15px;
+        a{
+            color: $whiteColor;
+            text-decoration: none;
+            font-size: 12px;
+            transition: color 1s ease, font-size 1s;
+            &:hover{
+                color: $greyColor;
+                font-size: 14px;
+            }
+        }
+    }
+  }
+  
+  .navbar{                             /*OK*/
+    /*border: 02px solid #558ED5;
+    border-radius: 05px;*/
+    /* display: none; antes no estaba para desktop */
+    padding-top: 0%;  /*antes 10%*/
+    padding-left: 7%;
+    font-family: 'Cabin', sans-serif;
+  }
+  
+  .navbar ul{                             /*OK*/
+    /*display: flex;
+    justify-content: flex-start;*/
+    list-style-type: none;
+    padding: 0;
+    margin: 15px;
+  }
+  
+  .navbar ul li{                             /*OK*/
+    padding: 05px;
+    margin: 0;
+  
+  }
+  
+  .navbar ul li a {                             /*OK , font-size 1.5s*/
+    color: $whiteColor;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 1s ease, font-size 1s;
+  }
+  
+  .navbar ul li a:hover{                             /*OK*/
+    color: $greyColor;
+    font-size: 14px;
+  }
+  
+  
+  .img{                             /*OK*/
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    width: fit-content;
+    padding-right: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .img:hover{
+    width: fit-content;
+    height: 25px;
+  }
+  
+  .imglogo{                             /*OK*/
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding-left: 10px;
+  }
+  

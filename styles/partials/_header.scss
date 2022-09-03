@@ -1,0 +1,19 @@
+.header{                             /*OK*/
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+    /* border: $headerBorder (3px solid #1F497D); */ 
+  }
+  
+.divheader{                             /*OK*/
+    display: flex;
+    list-style-type: none;
+    padding-right: 10px;
+    align-items: flex-end;
+ }
+    
+.div{
+    display: flex;
+ }

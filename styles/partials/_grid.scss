@@ -1,0 +1,113 @@
+/*Diseño para mobile*/
+
+.grid{                             /*OK*/
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "footer";
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  
+  .gridiniciosesion{
+    display: grid;
+    grid-template-areas: 
+    "main aside";
+    grid-template-columns: auto;
+  
+  }
+  
+  header{                             /*OK*/
+    grid-area: header;
+  }
+  
+  nav{                             /*OK*/
+    grid-area: nav;
+    background-color: #1F497D;
+  }
+  
+  footer{                             /*OK*/
+    grid-area: footer;
+  }
+  
+  #contenido {
+    grid-area: contenido;
+  }
+  
+  @media screen and (max-width:599px) and (orientation: landscape) {
+    .grid{
+      display: grid;
+      grid-template-areas: 
+      "header"
+      "contenido"
+      "footer";
+      grid-template-rows: 2fr 6fr 1fr;
+      grid-template-columns: 1fr;
+    }
+  
+    .buttongrey{
+      width: 10%;
+    }
+  }
+  
+  /*Fin de diseño para mobile*/
+  
+  /*Diseño para tableta*/
+  @media screen and (min-width:600px) and (orientation: portrait) {
+    /* .grid{
+       grid-template-areas: 
+      "header header"
+      "nav contenido"
+      "nav footer";
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(5,1fr); 
+      }*/
+  }
+  
+  @media screen and (min-width:600px) and (orientation: landscape) {
+  
+    /*. grid{                          
+      display: grid;
+      grid-template-areas: 
+      "nav header"
+      "nav contenido"
+      "nav footer";
+      grid-template-rows: 10% auto 10%;
+      grid-template-columns: 15% auto;
+      height: 100vh;
+      column-gap: 5px;
+      row-gap: 5px;
+      /*eliminar lo q no es necesario
+    }
+    */
+  }
+
+  /*Fin de diseño para tableta*/
+  
+  /*Diseño para desktop*/
+  @media screen and (min-width:1200px) {
+    /*.grid{                             /*OK*/
+      /* display: grid;
+      grid-template-areas: 
+      "nav header"
+      "nav contenido"
+      "nav footer";
+      grid-template-rows: 10% auto 10%;
+      grid-template-columns: 15% auto;
+      height: 100vh;
+      column-gap: 5px;
+      row-gap: 5px; 
+      eliminar lo q no es necesario
+    }*/
+  }
+
+
+  @media print {
+    .grid{
+      display:none;
+    }
+  }
+  
+  /*Fin de diseño para desktop*/
