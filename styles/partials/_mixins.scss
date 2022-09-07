@@ -1,0 +1,5 @@
+@mixin estilos($textAlign,$borderColorTable) {
+    table-layout: auto;
+    text-align: $textAlign;
+    border: 02px solid $borderColorTable;
+}

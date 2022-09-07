@@ -1,36 +1,16 @@
-
-  .article{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 25% 40px;
-    background-image: url(https://i.pinimg.com/564x/5f/c7/df/5fc7df124df8b752a89aca3dc4a94e41.jpg);
-    background-repeat: none;
-    background-size: cover;
-  }
-  
   .main{
     font-family: 'Cabin', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;  
     padding: 0px 5% 0px 5%;
-    /* padding: 0px 50px 0px 50px;  */
-    /* border: 3px solid #1F497D; */
   }
-  
-  .maintitlesesion{
-    padding: 40px 0px 30px;
-    color: $whiteColor;
-  }
-  
+
   .maintitle{             
-    /* padding: 0 0 20px 20px;                OK */
     padding-bottom: 20px;
     font-size: 25px;
   }
   .mainsubtitle{
-      /* padding: 0 0 20px 20px;  */
     padding-bottom: 20px;
     font-size: 20px;
   }
@@ -43,74 +23,16 @@
     flex-direction: column;
   }
   
-  .button{                             /*OK*/
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    width: fit-content;
-    background-color: $letterColor;
-    padding: 7px;
-    border-radius: 05px;
-    border: 2px solid $blueColorSecondary;
-    color: $blueColorSecondary;
-  }
-  
   .divopcion{
-    /* padding: 0 0 20px 20px;  */
     padding-bottom: 20px;
   }
   
-  .buttongrey{                             /*OK*/
-    background-color: $greyColor;
-    border-radius: 05px;
-    list-style-type: none;
-    padding: 10px;
-    width: 40%; /*antes 10%*/
-    height: 10%;
-    text-align: center;
-    text-decoration: none; 
-    color: $blackColor;
-    border: none;
-    font-size: 15px;
-    font-family: 'Cabin', sans-serif;
-    cursor: pointer;
-  }
-  
-  .buttongreyfont{                             /*OK*/
-    text-decoration: none;
-    color: $blackColor;
-  }
   
   .mainconfirmed{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20%;
-    /*flex-flow: column wrap ;
-    align-content: center;
-    justify-content: center;*/
     font-family: 'Cabin', sans-serif;
   }
 
-    /*iniciosesion*/
-  .mainsesion{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    font-family: 'Cabin', sans-serif;
-    padding-left: 0px;
-    }
-  
-  .aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    justify-content: center;
-  }
-  
-  .form{
-    border: 0;
-    outline: none;
-  }
-  

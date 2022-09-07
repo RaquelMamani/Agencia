@@ -1,6 +1,6 @@
 
   .navtitle{                           /*OK*/
-    color: $whiteColor;
+    color: map-get($color, whiteColor);
     padding-left: 10px;
   }
 
@@ -13,12 +13,12 @@
         padding: 0;
         margin: 15px;
         a{
-            color: $whiteColor;
+            color: map-get($color, whiteColor);
             text-decoration: none;
             font-size: 12px;
             transition: color 1s ease, font-size 1s;
             &:hover{
-                color: $greyColor;
+                color: map-get($color, greyColor);
                 font-size: 14px;
             }
         }
@@ -26,17 +26,12 @@
   }
   
   .navbar{                             /*OK*/
-    /*border: 02px solid #558ED5;
-    border-radius: 05px;*/
-    /* display: none; antes no estaba para desktop */
-    padding-top: 0%;  /*antes 10%*/
+    padding-top: 0%; 
     padding-left: 7%;
     font-family: 'Cabin', sans-serif;
   }
   
   .navbar ul{                             /*OK*/
-    /*display: flex;
-    justify-content: flex-start;*/
     list-style-type: none;
     padding: 0;
     margin: 15px;
@@ -49,14 +44,14 @@
   }
   
   .navbar ul li a {                             /*OK , font-size 1.5s*/
-    color: $whiteColor;
+    color: map-get($color, whiteColor);
     text-decoration: none;
     font-size: 12px;
     transition: color 1s ease, font-size 1s;
   }
   
   .navbar ul li a:hover{                             /*OK*/
-    color: $greyColor;
+    color: map-get($color, greyColor);
     font-size: 14px;
   }
   

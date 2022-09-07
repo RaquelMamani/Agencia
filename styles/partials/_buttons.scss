@@ -1,0 +1,44 @@
+.primario {
+    @extend %selectButton;
+    background-image: linear-gradient(map-get( $color, greenColorSecondary), map-get( $color, greenColor));
+}
+
+.secundario {
+    @extend %selectButton;
+    background-image: linear-gradient(map-get( $color, blueColorSecondary), map-get( $color, blueColor));
+}
+
+
+  .buttongrey{              
+    background-color: map-get( $color, greyColor);
+    border-radius: 05px;
+    list-style-type: none;
+    padding: 10px;
+    width: 40%; /*antes 10%*/
+    height: 10%;
+    text-align: center;
+    text-decoration: none; 
+    color: map-get( $color, blackColor);
+    border: none;
+    font-size: 15px;
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+  }
+  
+  .button{                             /*OK*/
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: fit-content;
+    background-color: map-get( $color, whiteColor);
+    padding: 7px;
+    border-radius: 05px;
+    border: 2px solid map-get($color, blueColorSecondary);
+    color: map-get($color, blueColorSecondary);
+  }
+  .buttongreyfont{                             /*OK*/
+    text-decoration: none;
+    color: map-get($color, blackColor);
+  }
+
+

@@ -56,51 +56,19 @@
   
   /*Diseño para tableta*/
   @media screen and (min-width:600px) and (orientation: portrait) {
-    /* .grid{
-       grid-template-areas: 
-      "header header"
-      "nav contenido"
-      "nav footer";
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: repeat(5,1fr); 
-      }*/
+
   }
   
   @media screen and (min-width:600px) and (orientation: landscape) {
   
-    /*. grid{                          
-      display: grid;
-      grid-template-areas: 
-      "nav header"
-      "nav contenido"
-      "nav footer";
-      grid-template-rows: 10% auto 10%;
-      grid-template-columns: 15% auto;
-      height: 100vh;
-      column-gap: 5px;
-      row-gap: 5px;
-      /*eliminar lo q no es necesario
-    }
-    */
+
   }
 
   /*Fin de diseño para tableta*/
   
   /*Diseño para desktop*/
   @media screen and (min-width:1200px) {
-    /*.grid{                             /*OK*/
-      /* display: grid;
-      grid-template-areas: 
-      "nav header"
-      "nav contenido"
-      "nav footer";
-      grid-template-rows: 10% auto 10%;
-      grid-template-columns: 15% auto;
-      height: 100vh;
-      column-gap: 5px;
-      row-gap: 5px; 
-      eliminar lo q no es necesario
-    }*/
+
   }
 
 

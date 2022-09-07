@@ -1,14 +1,12 @@
-.tableresume{                             /*OK*/
+.tableresume{                     
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     justify-content: center;
     text-align: center;
-    /*¿Cómo hacer para que las columnas tengan el mismo tamañao proporcionado?*/
     }
   
-  .cellresume{                             /*OK*/
-    background-color: $greyColor;
+  .cellresume{                 
+    background-color: map-get($color, greyColor);
     padding: 40px 40px 40px 40px;
     border-radius: 10px;
     width: 100%; /*antes 40%*/
@@ -24,45 +22,32 @@
     padding-top: 10px;
   }
   
-  select{                             /*OK*/
-    /* background-color: #C3D69B; */
-    background-image: linear-gradient($greenColorSecondary, $greenColor);
-    padding: 8px;
-    border-radius: 05px;
-    border: none;
-    width: 80%;
-  }
 
-
-  .table{                             /*OK*/
-    border: 02px solid $greyColor;
-    table-layout: auto;
-    text-align: center;
+  .table{      
+    @include estilos($textAlign: center, $borderColorTable: map-get($color, greyColor));
   }
   
   .table tr :nth-child(4),tr :nth-child(5) {
     display:none;
   }
   
-  .tableanotation{                             /*OK*/
-    border: 02px solid $greyColor;
-    table-layout: auto;
-    text-align: left;
+  .tableanotation{                    
+    @include estilos(left,map-get($color, greyColor));
   }
   
   .table.row {                             /*OK*/
-    border: 02px solid $greyColor;
+    border: 02px solid map-get($color, greyColor);
   }
   
   .th{                             /*OK*/
     padding: 10px;
     width: 15%;
-    border-bottom: 1px solid $greyColor;
+    border-bottom: 1px solid map-get($color, greyColor);
     transition: color 1.5s ease-out;
   }
   
   tr:hover{                             /*OK*/
-    background-color: $greyColor;
+    background-color: map-get($color, greyColor);
   }
 
 @media screen and (min-width:600px) and (orientation: portrait) {
