@@ -113,6 +113,7 @@ footer { /*OK*/
 .th { /*OK*/
   padding: 10px;
   width: 15%;
+  font-size: 12px;
   border-bottom: 1px solid #D9D9D9;
   transition: color 1.5s ease-out;
 }
@@ -188,6 +189,10 @@ tr:hover { /*OK*/
 .buttongreyfont { /*OK*/
   text-decoration: none;
   color: black;
+}
+
+.buttonBig {
+  font-size: xx-small;
 }
 
 .header { /*OK*/
